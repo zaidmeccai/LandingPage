@@ -1,0 +1,205 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #1F2937;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #E5E7EB;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 18px;
+}
+
+/* Hero section */
+.hero {
+    background-color: #1F2937;
+    padding: 5rem 0;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.placeholder {
+    background-color: #6D747D;
+    color: #fff;
+    padding: 8rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Info section */
+.info {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 3rem;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.info-item {
+    max-width: 200px;
+}
+
+.info-box {
+    border: 4px solid #3882F6;
+    border-radius: 8px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+/* Quote section */
+.quote {
+    background-color: #E5E7EB;
+    padding: 5rem 0;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+/* CTA section */
+.cta {
+    padding: 5rem 0;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cta-container .sign-up {
+    border: 2px solid white;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-container, .info-container {
+        flex-direction: column;
+    }
+    
+    .info-container {
+        align-items: center;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav a {
+        margin: 0 1rem;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+} 
